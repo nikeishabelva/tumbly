@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tumbly — Cute & Aesthetic Tumbler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home">tumbly<span>♡</span></a>
+  <nav>
+    <a href="#home">Home</a><a href="#collection">Collection</a><a href="#reviews">Reviews</a><a href="#about">About</a>
+  </nav>
+  <button class="bag" onclick="openCart()">🛍 <span id="count">0</span></button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="label">SOFT • PRETTY • EVERYDAY</p>
+    <h1>Carry your drink,<br><em>carry your style.</em></h1>
+    <p class="intro">Tumbler lucu dengan warna soft pink yang manis, desain aesthetic, dan kualitas yang nyaman dipakai setiap hari.</p>
+    <a class="btn" href="#collection">Explore Collection →</a>
+    <div class="mini-info"><span>♡</span> Cute designs &nbsp; <span>✦</span> Good quality &nbsp; <span>♡</span> Everyday use</div>
+  </div>
+  <div class="hero-visual">
+    <div class="halo"></div>
+    <div class="tumbler big-tumbler">
+      <div class="lid"></div><div class="straw"></div><div class="cup">♡<small>tumbly</small></div>
+    </div>
+    <div class="flower f1">✿</div><div class="flower f2">❀</div><div class="heart h1">♡</div>
+  </div>
+</section>
+
+<section class="section" id="collection">
+  <div class="heading">
+    <div><p class="label">OUR FAVORITES</p><h2>Tumbler pilihan ♡</h2></div>
+    <p>Simple, cute, dan cocok menemani aktivitasmu.</p>
+  </div>
+  <div class="products" id="products"></div>
+</section>
+
+<section class="quality">
+  <div class="quality-text">
+    <p class="label">WHY TUMBLY?</p>
+    <h2>Good tumbler,<br><em>good mood.</em></h2>
+    <p>Setiap tumbler dipilih dengan desain yang cantik dan material yang nyaman digunakan. Bentuknya aesthetic, terasa kokoh, dan mudah dibawa untuk menemani sekolah, belajar, jalan-jalan, atau sekadar menikmati minuman favoritmu.</p>
+  </div>
+  <div class="quality-list">
+    <div><b>01</b><span><strong>Desain Aesthetic</strong>Warna soft pink yang lembut dan mudah dipadukan dengan style kamu.</span></div>
+    <div><b>02</b><span><strong>Nyaman Dipakai</strong>Handle praktis dan bentuk yang nyaman untuk aktivitas sehari-hari.</span></div>
+    <div><b>03</b><span><strong>Pretty & Practical</strong>Lucu untuk dilihat, fungsional untuk digunakan setiap hari.</span></div>
+  </div>
+</section>
+
+<section class="section reviews" id="reviews">
+  <div class="center"><p class="label">CUSTOMER LOVE</p><h2>Respon pelanggan ♡</h2><p>Mereka sudah punya tumbly favoritnya!</p></div>
+  <div class="review-grid">
+    <article><div class="stars">★★★★★</div><p>“Lucu banget! Warna pink-nya soft persis seperti yang aku bayangin. Dipakai setiap hari juga nyaman.”</p><strong>— Aurel, Jakarta</strong></article>
+    <article><div class="stars">★★★★★</div><p>“Kualitasnya bagus dan kelihatan aesthetic banget. Aku suka karena desainnya simple tapi tetap cute.”</p><strong>— Naya, Bandung</strong></article>
+    <article><div class="stars">★★★★★</div><p>“Packaging-nya cantik, tumblernya juga terasa kokoh. Cocok banget buat hadiah!”</p><strong>— Caca, Surabaya</strong></article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div><p class="label">ABOUT TUMBLY</p><h2>Pretty little things<br>for <em>everyday life.</em></h2></div>
+  <p>Tumbly hadir untuk kamu yang suka barang-barang lucu dan aesthetic. Kami percaya tumbler bukan hanya tempat minum, tapi juga bagian kecil dari personal style. ♡</p>
+</section>
+</main>
+
+<footer><div class="brand">tumbly<span>♡</span></div><p>Made with soft pink & love ✿</p><p>© 2026 Tumbly</p></footer>
+
+<div class="toast" id="toast">Ditambahkan ke bag ♡</div>
+<div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeCart()">×</button><h2>Your bag ♡</h2><div id="items"></div><div class="total"><span>Total</span><b id="total">Rp0</b></div><button class="btn checkout" onclick="checkout()">Order via WhatsApp</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
